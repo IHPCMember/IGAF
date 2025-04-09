@@ -1,11 +1,4 @@
 # IGAF
 Coming soon.
 
-data
-|---mvtec_anomaly_detection
-|-----|-- bottle
-|-----|-----|----- ground_truth
-|-----|-----|----- test
-|-----|-----|----- train
-|-----|-- cable
-|-----|--- ...
+<pre lang="markdown"> ```bash data/ ├── mvtec_anomaly_detection/ │ ├── bottle/ │ │ ├── ground_truth/ │ │ ├── test/ │ │ └── train/ │ ├── cable/ │ ├── ... ``` </pre>
