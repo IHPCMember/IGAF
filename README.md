@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 ### Training
 ```
-python train.py --gpu_id 0 --obj_id -1 --lr 0.03 --batch_size 16 --epochs 800 --data_path /your/dataset/path/mvtec_ad/ --log_path /your/log/path/checkpoints_mvtecad/ --checkpoint_path /your/checkpoints/path/checkpoints_mvtecad/ --visualize 
+python train.py --gpu_id 0 --obj_id -1 --learning_rate 0.03 --batch_size 16 --epochs 800 --data_path /your/dataset/path/mvtec_ad/ --log_path /your/log/path/checkpoints_mvtecad/ --checkpoint_path /your/checkpoints/path/checkpoints_mvtecad/ --visualize 
 ```
 
 
