@@ -1,8 +1,7 @@
 # IGAF
 Coming soon.
 
-
-
+```
 📁 data
  └── 📁 mvtec_anomaly_detection
      ├── 📁 bottle
@@ -11,6 +10,7 @@ Coming soon.
      │   └── 📁 train
      ├── 📁 cable
      └── ...
+```
 
 
 
