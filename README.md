@@ -1,7 +1,7 @@
 # IGAF
 Coming soon.
 
-# Data
+## Data
 The method is evaluated on:   
 
 MVTec AD dataset: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad)   
@@ -11,7 +11,7 @@ VisA dataset: [VisA](https://github.com/amazon-science/spot-diff/)
 BTAD dataset: [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip)   
 
 
-## MVTec AD
+### MVTec AD
 
 ```
 📁 data
@@ -24,7 +24,7 @@ BTAD dataset: [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip)
      └── ...
 ```
 
-## VisA
+### VisA
 
 ```
 📁 data
@@ -38,7 +38,7 @@ BTAD dataset: [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip)
 ```
 
 
-## BTAD
+### BTAD
 
 ```
 📁 data
@@ -52,7 +52,13 @@ BTAD dataset: [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip)
 ```
 
 
+## Quick start
 
+
+```
+conda activate <your_env>
+pip install -r requirements.txt
+```
 
 
 
