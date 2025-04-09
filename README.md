@@ -2,10 +2,11 @@
 Coming soon.
 
 # Data
-The method is evaluated on:
-MVTec AD dataset: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad)
-VisA dataset: [VisA](https://github.com/amazon-science/spot-diff/)
+The method is evaluated on: \\
+MVTec AD dataset: [MVTec AD](https://www.mvtec.com/company/research/datasets/mvtec-ad) \\
+VisA dataset: [VisA](https://github.com/amazon-science/spot-diff/) \\
 BTAD dataset: [BTAD](http://avires.dimi.uniud.it/papers/btad/btad.zip)
+
 ## MVTec AD
 
 ```
