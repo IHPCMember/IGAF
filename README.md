@@ -1,5 +1,4 @@
 # IGAF
-Coming soon.
 
 ## Data
 The method is evaluated on:   
