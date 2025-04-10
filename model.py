@@ -27,11 +27,11 @@ class SpatialInteractionAttention(nn.Module):
         N = H * W 
 
         
-        psi_feat = self.embed_psi(x)       # (B, C//reduction, H, W)
-        phi_feat = self.embed_phi(x)       # (B, C//reduction, H, W)
-        psi_reshaped = psi_feat.view(B, -1, N)    # (B, C//reduction, N)
-        phi_reshaped = phi_feat.view(B, -1, N)      # (B, C//reduction, N)
-        affinity = torch.bmm(psi_reshaped.transpose(1, 2), phi_reshaped)  # (B, N, N)
+        psi_feat = self.embed_psi(x)      
+        phi_feat = self.embed_phi(x)       
+        psi_reshaped = psi_feat.view(B, -1, N)    
+        phi_reshaped = phi_feat.view(B, -1, N)      
+        affinity = torch.bmm(psi_reshaped.transpose(1, 2), phi_reshaped) 
 
         
         r_i = torch.cat([affinity, affinity.transpose(1, 2)], dim=2)
@@ -112,11 +112,11 @@ class IGAFEncoder(nn.Module):
             wrn.bn1,
             wrn.relu,
             wrn.maxpool,
-            wrn.layer1  # 输出约 (B, 256, H/4, W/4)
+            wrn.layer1  
         )
-        self.block2 = wrn.layer2      # 输出约 (B, 512, H/8, W/8)
-        self.block3 = wrn.layer3      # 输出约 (B, 1024, H/16, W/16)
-        self.block4 = wrn.layer4      # 输出约 (B, 2048, H/32, W/32)
+        self.block2 = wrn.layer2      
+        self.block3 = wrn.layer3      
+        self.block4 = wrn.layer4      
 
     def forward(self, x):
         x1 = self.block1(x)
