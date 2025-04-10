@@ -1,9 +1,3 @@
-"""
-Various utility functions for:
-    - parsing user arguments.
-    - computing the area under a curve.
-    - generating a toy dataset to test the evaluation script.
-"""
 from bisect import bisect
 
 import numpy as np
