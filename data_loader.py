@@ -12,8 +12,10 @@ class MVTecADTestDataset(Dataset):
 
     def __init__(self, root_dir, resize_shape=None):
         self.root_dir = root_dir
-        self.images = sorted(glob.glob(root_dir+"/*/*.png")) # Please activate this when using the MVTecAD dataset.
-        # self.images = sorted(glob.glob(root_dir + "/*/*.JPG"))  # Please activate this when using the VisA dataset.
+        # Please activate this when using the MVTecAD dataset.
+        self.images = sorted(glob.glob(root_dir+"/*/*.png")) 
+        # Please activate this when using the VisA dataset.
+        # self.images = sorted(glob.glob(root_dir + "/*/*.JPG"))  
         self.resize_shape = resize_shape
 
     def __len__(self):
@@ -71,8 +73,10 @@ class MVTecADTestDataset(Dataset):
         else:
             mask_path = os.path.join(dir_path, '../../ground_truth/')
             mask_path = os.path.join(mask_path, base_dir)
-            # mask_file_name = file_name.split(".")[0]+"_mask.png" # Please activate this when using the MVTecAD dataset.
-            mask_file_name = file_name.split(".")[0] + ".png"  # Please activate this when using the VisA dataset.
+            # Please activate this when using the MVTecAD dataset.
+            # mask_file_name = file_name.split(".")[0]+"_mask.png" 
+            # Please activate this when using the VisA dataset.
+            mask_file_name = file_name.split(".")[0] + ".png"  
             mask_path = os.path.join(mask_path, mask_file_name)
             image, mask, imagegray = self.transform_image(img_path, mask_path)
             has_anomaly = np.array([1], dtype=np.float32)
